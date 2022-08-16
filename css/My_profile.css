@@ -1,0 +1,275 @@
+body{
+    background-color: rgb(0,255,255);
+    background-image: url("../img/my_profile/my_profile_back.jpg");
+
+}
+h3{
+     background-color: rgb(126, 214, 236);
+    width: 100%;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    animation-name: fade_left_h3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+}
+
+
+@keyframes fade_left_h3{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+h4{ 
+    font-size: 130%;
+    color: rgb(12, 190, 235);
+    animation-name: fade_left_snstitle;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade_left_snstitle{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.profile_title{
+    text-align: center;
+        color: rgb(12, 196, 196);
+        margin-top: 30px;
+        margin-bottom: 10%;
+        width: 100%;
+        animation-name: fade_down_title;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+}
+@keyframes fade_down_title{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.twitter_yuu_love56n_img,.insta_yuu_love56n_img{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    animation-name: fade_right_img;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade_right_img {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.sns{
+    display: flex;
+    justify-content: center;
+}
+.base_info_title{
+    text-align: center;
+}
+
+.base,.base2,.understand_list,.cannot_understand_list,.stpr_sentence{
+    animation-name: fade_right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade_right{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.base{
+    color: rgb(7, 194, 241);
+}
+
+.base2{
+    color: rgb(7, 194, 241);
+}
+
+.understand_list{
+    color: rgb(7, 194, 241);
+}
+
+.cannot_understand_list{
+    color: rgb(7, 194, 241);
+}
+
+.stpr_sentence{
+    text-indent: 1em;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+li{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.warning{
+    display: inline-block;
+    color: rgb(255,0,0);
+    border: 3px solid rgb(255,0,0);
+    font-weight: bold;
+    margin-left: 3% ;
+    animation-name: fade_right_warning;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade_right_warning{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.base2 li{
+    list-style-type: disc;
+}
+.stpr_sentence p{
+    color: rgb(7, 194, 241);
+    font-weight: bold;
+    margin-right: 30%;
+}
+
+.page_top{
+    display: block;
+    right: 1%;
+    box-sizing: border-box;
+    background: #FFF;
+    border: 1px solid #999; 
+    padding-top: 9px;
+    margin-top: 17%;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 75%;
+    text-decoration: none;
+    color: #333;
+    opacity: 0.5;
+    height: 80px;
+    line-height: auto;
+    width: 80px;
+    opacity: 0.6;
+    background-color: rgb(126, 240, 240);
+    border-radius: 70px;
+    position: absolute;
+    right: 1%;
+    animation-name: fade_left_page_top;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade_left_page_top{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.page_top::before{
+    content: "";
+    display: block;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    width: 10%;
+    height: 10%;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+    
+}
+/*  
+*{
+    outline: 1px solid red;
+}
+*/
+ img.colon{
+    width: 300%;
+    height: 300%;
+ }
+
+/*LaptopL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen  and (max-width:1925px){/*BreakPoint max-width 1925 min-width 1766 */
+    h2{
+        font-size: 180%;
+    }
+    h3{
+
+        font-size: 160%;
+    }
+    
+}
+/*Laptop---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen  and (max-width:1200px){/*BreakPoint max-width 1200 min-width 900 */
+    
+    h3{
+        font-size: 160%;
+    }
+}
+/*Tablet---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen  and (max-width:834px){/* BreakPoint max-834 min-600  */
+    h3{
+        font-size: 160%;
+    }
+}
+/*mobile---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen  and (max-width:425px){/* BreakPoint max-412 min-360 */
+    h2{
+        font-size: 140%
+    }
+    h3{
+        font-size: 150%;
+    }
+    .warning{
+        font-size: 100%;
+        margin-right: 15%;
+        
+    }
+    .page_top{
+        font-size: 130;
+    }
+
+
+}

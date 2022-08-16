@@ -1,0 +1,239 @@
+@import url("./sanitize.css");
+    body{
+    
+        background-image: url("../img/index/index_back.jpg");
+        background-color: rgb(188, 235, 247);
+    }
+    
+    h2{
+        /* background-color: rgb(17, 20, 20); */
+        text-align: center; 
+        color: rgb(12, 196, 196);
+        margin-top: 30px;
+        margin-bottom: 10%;
+        width: 100%;
+        animation-name: fade_down_title;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    
+@keyframes fade_down_title{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+    a:hover{
+        color: red;
+    }
+    a{
+        font-size: 20px;
+        color: blueviolet;
+        font-weight: bold;
+    }
+
+    ul{
+    
+        text-align: center;
+        list-style-type: none;
+        animation-name: fade_left_link;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    @keyframes fade_left_link{
+        from{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .introduction{
+        display: flex;
+        justify-content: center;
+    }
+    img.stpr_colon{
+        display: block;
+        width: 18%;
+        height: auto;
+        margin-bottom: 3%;
+        animation-name: fade_right_colon_img;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+@keyframes fade_right_colon_img{
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to{
+            opacity: 1;
+        }
+}
+img.ichigono_oji_store{
+    display: block;
+    width: 18%;
+    height: auto;
+    /* margin-left: 47%; */
+    /* margin-top: 3%; */
+    position:fixed;
+    right: 36%;
+    bottom: auto;
+    animation-name: fade_right_ichigono_oji_store;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+img.ichigono_oji_store:hover{
+    border: 1px solid rgb(253, 190, 201);   
+}
+@keyframes fade_right_ichigono_oji_store{
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+a{
+    font-size: 130%;
+    font-weight: bold;
+}
+
+
+/*LaptopL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:1925px) {/*BreakPoint max-width 1925 min-width 1766 */
+    h2{
+        /* background-color:aqua; */
+        font-size: 240%;
+        text-align: center;
+        color: rgb(12, 196, 196);
+        margin-top: 30px;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    img.stpr_colon{
+        width: 12%;
+        height: auto;
+        margin-right:6% ;
+    }
+    img.ichigono_oji_store{
+        width: 12%;
+        height: auto;
+        position: fixed;
+        right: 43%;
+        bottom: auto;
+    }
+    a{
+        font-size: 140%;
+    }
+    
+}
+/*Laptop---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width) {
+    
+}
+@media screen and (max-width:1200px) {/*BreakPoint max-width 1200 min-width 900 */
+    h2{
+        font-size: 200%;
+        /* background-color:red; */
+        text-align: center;
+        color: rgb(12, 196, 196);
+        margin-top: 30px;
+        margin-bottom: 8%;
+        width: 100%;
+    }
+
+    img.stpr_colon{
+        width: 15%;
+        height: auto;
+    }
+    img.ichigono_oji_store{
+        width: 15%;
+        height: auto;
+        position: fixed;
+        right: 40%;
+        bottom: auto;
+        /* border: 1px solid red; */
+    }
+
+}
+/*Tablet---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:834px) {/*BreakPoint max-834 min-600  */
+    h2{
+        /* background-color: orange; */
+        /* color: red; */
+        font-size: 27px;
+        width: 100%;
+    }
+    img.stpr_colon{
+        width: 25%;
+        height: auto;
+        margin-left: 10px;
+
+    }
+    img.ichigono_oji_store{
+        width: 25%;
+        height: auto;
+        position: fixed;
+        right: 30%;
+        bottom: auto;
+        /* border: 1px solid red; */
+    }
+      
+    a{
+        font-size: 22px;
+        font-weight: bold;
+        color: blueviolet;
+    }
+    .container{
+        margin-top: 2%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    } 
+}
+/* 
+*{ 
+    outline: 1px solid red;
+}
+*/
+/*mobile---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:425px) {/* BreakPoint max-412 min-370 */
+    h2{
+        /* background-color: blueviolet; */
+        /* color: red; */
+        font-size: 105%;
+        margin-bottom: 20%;
+        width: 100%;
+    }
+    img.stpr_colon{
+        width: 36%;
+        height: auto;
+        margin-top: 11%;
+        margin-left: 10px;
+    }
+    img.ichigono_oji_store{
+        width: 36%;
+        height: auto;
+        position: fixed;
+        right: 16%;
+        bottom: auto;
+    }
+        
+    a{
+        font-size: 66%;
+
+    }
+    .container{
+        margin-top: 5%;
+        margin-bottom: 1px;
+    } 
+}
