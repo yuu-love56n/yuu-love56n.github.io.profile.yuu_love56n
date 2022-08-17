@@ -2,22 +2,24 @@
     body{
     
         background-image: url("../img/index/index_back.jpg");
-        background-color: rgb(188, 235, 247);
+        background-color: rgb(103, 212, 239);
+    }
+    div.title{
+        display: flex;
     }
     
     h2{
         /* background-color: rgb(17, 20, 20); */
         text-align: center; 
-        color: rgb(12, 196, 196);
+        color: rgb(16, 179, 208);
         margin-top: 30px;
-        margin-bottom: 10%;
         width: 100%;
         animation-name: fade_down_title;
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
-    
+  
 @keyframes fade_down_title{
     from{
         opacity: 0;
@@ -81,8 +83,6 @@ img.ichigono_oji_store{
     display: block;
     width: 18%;
     height: auto;
-    /* margin-left: 47%; */
-    /* margin-top: 3%; */
     position:fixed;
     right: 36%;
     bottom: auto;
@@ -107,7 +107,98 @@ a{
     font-size: 130%;
     font-weight: bold;
 }
+svg.hert_left{
+    fill: rgb(251, 141, 234);
+    width: 7%;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    transform: rotate(-30deg);
+    animation-name: fade_in_right_hert;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade_in_right_hert{
+    from{
+        opacity: 0;
+        transform: translate(-300px);
+    }
+    to{
+        opacity: 1;
+    }
+}
 
+svg.hert_right{
+    fill: rgb(251, 141, 234);
+    width: 7%;
+    height: auto;
+    position: absolute;
+    right: 20%;
+    top: 2%;
+    transform: rotate(-30deg);
+    animation-name: fade_in_left_hert;
+    animation-delay: .5s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade_in_left_hert{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+svg.cloud_left{
+    width: 9%;
+    height: auto;
+    fill: rgb(12, 107, 191);
+    position: absolute;
+    left: 9%;
+    top: 2%;
+    animation-name: fade_in_left_cloud;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+@keyframes fade_in_left_cloud{
+    from{
+        opacity: 0;
+        transform: translate(-300px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+svg.cloud_right{
+    width: 9%;
+    height: auto;
+    position: absolute;
+    right: 9%;
+    top: 2%;
+    animation-name: fade_in_right_cloud;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    opacity: 0; 
+}
+
+@keyframes fade_in_right_cloud{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 /*LaptopL---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:1925px) {/*BreakPoint max-width 1925 min-width 1766 */
@@ -115,7 +206,7 @@ a{
         /* background-color:aqua; */
         font-size: 240%;
         text-align: center;
-        color: rgb(12, 196, 196);
+        color: rgb(16, 179, 208);
         margin-top: 30px;
         margin-bottom: 5%;
         width: 100%;
@@ -135,18 +226,25 @@ a{
     a{
         font-size: 140%;
     }
+    svg.hert_left{
+        width: 7%;
+        height: auto;
+        left: 20%;
+    }
+    svg.hert_right{
+        width: 7%;
+        height: auto;
+        right: 20%;
+    }
     
 }
 /*Laptop---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width) {
-    
-}
 @media screen and (max-width:1200px) {/*BreakPoint max-width 1200 min-width 900 */
     h2{
         font-size: 200%;
         /* background-color:red; */
         text-align: center;
-        color: rgb(12, 196, 196);
+        color: rgb(16, 179, 208);
         margin-top: 30px;
         margin-bottom: 8%;
         width: 100%;
@@ -164,13 +262,16 @@ a{
         bottom: auto;
         /* border: 1px solid red; */
     }
-
+    svg.cloud{
+        right: 62%;
+    }
 }
 /*Tablet---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:834px) {/*BreakPoint max-834 min-600  */
     h2{
         /* background-color: orange; */
         /* color: red; */
+        color: rgb(16, 179, 208);
         font-size: 27px;
         width: 100%;
     }
@@ -181,12 +282,23 @@ a{
 
     }
     img.ichigono_oji_store{
+        margin-top: 10%;
         width: 25%;
         height: auto;
         position: fixed;
         right: 30%;
         bottom: auto;
         /* border: 1px solid red; */
+    }
+    svg.hert_left{
+        width: 10%;
+        height: auto;
+        left: 13%;
+    }
+    svg.hert_right{
+        width: 10%;
+        height: auto;
+        right: 13%;
     }
       
     a{
@@ -199,7 +311,13 @@ a{
         overflow-x: hidden;
         overflow-y: hidden;
     } 
-}
+}   
+    svg.cloud_right{
+        right: 2%;
+    }
+    svg.cloud_left{
+        left: 2%;
+    }
 /* 
 *{ 
     outline: 1px solid red;
@@ -213,6 +331,16 @@ a{
         font-size: 105%;
         margin-bottom: 20%;
         width: 100%;
+    }
+    svg.hert_left{
+        width: 14%;
+        height: auto;
+        left: 10%;
+    }
+    svg.hert_right{
+        width: 14%;
+        height: auto;
+        right: 9%;
     }
     img.stpr_colon{
         width: 36%;
